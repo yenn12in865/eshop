@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>web-parent</artifactId>
 
+    <modules>
+        <module>web-app</module>
+    </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
