@@ -1,16 +1,16 @@
 package sharebooks.service;
 
-import sharebooks.entity.User;
+import sharebooks.entity.Area;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
  * <p>
- * 用户表 服务类
+ * 省市县区表 服务类
  * </p>
  *
  * @author anonymity
  * @since 2018-07-04
  */
-public interface UserService extends IService<User> {
+public interface AreaService extends IService<Area> {
 
 }

@@ -1,17 +1,20 @@
-package com.eshop.we.service;
+package sharebooks.serviceImpl;
 
-import com.eshop.we.user.api.UserService;
-import com.eshop.we.user.entity.UserEntity;
-import com.eshop.we.service.server.BaseServerImpl;
-
+import sharebooks.entity.User;
+import sharebooks.mapper.UserMapper;
+import sharebooks.service.UserService;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
 
 /**
- * C/**
- * ${DESCRIPTION}
+ * <p>
+ * 用户表 服务实现类
+ * </p>
  *
- * @author wangzhanguo
- * @create 2018-05-30 15:39
- **/
-public class UserServiceImpl extends BaseServerImpl<UserEntity> implements UserService{
+ * @author anonymity
+ * @since 2018-07-04
+ */
+@Service
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
 }
