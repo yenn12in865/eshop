@@ -1,7 +1,8 @@
-package sharebooks.service;
+package com.eshop.we.user.api;
 
-import sharebooks.entity.Area;
+
 import com.baomidou.mybatisplus.service.IService;
+import com.eshop.we.user.entity.Area;
 
 /**
  * <p>

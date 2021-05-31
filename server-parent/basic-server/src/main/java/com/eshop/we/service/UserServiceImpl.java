@@ -1,10 +1,11 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.User;
-import sharebooks.mapper.UserMapper;
-import sharebooks.service.UserService;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.UserMapper;
+import com.eshop.we.user.api.UserService;
+import com.eshop.we.user.entity.User;
+
 
 /**
  * <p>
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
 }

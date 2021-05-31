@@ -1,7 +1,8 @@
-package sharebooks.mapper;
+package com.eshop.we.mappers;
 
-import sharebooks.entity.ExchangeOrderDetail;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+
+import com.eshop.we.mapper.SuperMapper;
+import com.eshop.we.user.entity.ExchangeOrderDetail;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @author anonymity
  * @since 2018-07-04
  */
-public interface ExchangeOrderDetailMapper extends BaseMapper<ExchangeOrderDetail> {
+public interface ExchangeOrderDetailMapper extends SuperMapper<ExchangeOrderDetail> {
 
 }

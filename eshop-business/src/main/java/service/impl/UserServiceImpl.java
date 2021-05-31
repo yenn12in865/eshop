@@ -1,8 +1,6 @@
 package service.impl;
 
-import com.eshop.we.service.server.BaseServerImpl;
-import com.eshop.we.user.api.UserService;
-import com.eshop.we.user.entity.UserEntity;
+import com.baomidou.mybatisplus.service.IService;
 
 /**
  * C/**
@@ -11,6 +9,6 @@ import com.eshop.we.user.entity.UserEntity;
  * @author wangzhanguo
  * @create 2018-06-04 15:31
  **/
-public class UserServiceImpl extends BaseServerImpl<UserEntity> implements UserService {
+public class UserServiceImpl extends BaseServerImpl<UserEntity> implements IService<Deal> {
 
 }

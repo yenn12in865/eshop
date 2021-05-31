@@ -1,10 +1,11 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.CorpMember;
-import sharebooks.mapper.CorpMemberMapper;
-import sharebooks.service.CorpMemberService;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.CorpMemberMapper;
+import com.eshop.we.user.api.CorpMemberService;
+import com.eshop.we.user.entity.CorpMember;
+
 
 /**
  * <p>
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class CorpMemberServiceImpl extends ServiceImpl<CorpMemberMapper, CorpMember> implements CorpMemberService {
 
 }

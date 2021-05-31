@@ -1,10 +1,11 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.Category;
-import sharebooks.mapper.CategoryMapper;
-import sharebooks.service.CategoryService;
+
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.CategoryMapper;
+import com.eshop.we.user.api.CategoryService;
+import com.eshop.we.user.entity.Category;
 
 /**
  * <p>
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
 
 }

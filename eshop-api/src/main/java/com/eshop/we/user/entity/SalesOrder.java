@@ -1,4 +1,4 @@
-package sharebooks.entity;
+package com.eshop.we.user.entity;
 
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
@@ -47,12 +47,12 @@ public class SalesOrder implements Serializable {
      * 租书人姓名
      */
     @TableField("consumer _name")
-    private String consumer Name;
+    private String consumerName;
     /**
      * 租书人手机号
      */
     @TableField("consumer _mobile")
-    private String consumer Mobile;
+    private String consumerMobile;
     /**
      * 图书id
      */
@@ -154,20 +154,20 @@ public class SalesOrder implements Serializable {
         this.consumerId = consumerId;
     }
 
-    public String getConsumer Name() {
-        return consumer Name;
+    public String getConsumerName() {
+        return consumerName;
     }
 
-    public void setConsumer Name(String consumer Name) {
-        this.consumer Name = consumer Name;
+    public void setConsumerName(String consumerName) {
+        this.consumerName = consumerName;
     }
 
-    public String getConsumer Mobile() {
-        return consumer Mobile;
+    public String getConsumerMobile() {
+        return consumerMobile;
     }
 
-    public void setConsumer Mobile(String consumer Mobile) {
-        this.consumer Mobile = consumer Mobile;
+    public void setConsumerMobile(String consumerMobile) {
+        this.consumerMobile = consumerMobile;
     }
 
     public Integer getBookId() {
@@ -267,8 +267,8 @@ public class SalesOrder implements Serializable {
         ", providerName=" + providerName +
         ", providerMobile=" + providerMobile +
         ", consumerId=" + consumerId +
-        ", consumer Name=" + consumer Name +
-        ", consumer Mobile=" + consumer Mobile +
+        ", consumerName=" + consumerName +
+        ", consumerMobile=" + consumerMobile +
         ", bookId=" + bookId +
         ", bookName=" + bookName +
         ", price=" + price +

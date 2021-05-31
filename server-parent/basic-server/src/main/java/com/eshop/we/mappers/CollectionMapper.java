@@ -1,7 +1,8 @@
-package sharebooks.mapper;
+package com.eshop.we.mappers;
 
-import sharebooks.entity.Collection;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+
+import com.eshop.we.mapper.SuperMapper;
+import com.eshop.we.user.entity.Collection;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @author anonymity
  * @since 2018-07-04
  */
-public interface CollectionMapper extends BaseMapper<Collection> {
+public interface CollectionMapper extends SuperMapper<Collection> {
 
 }

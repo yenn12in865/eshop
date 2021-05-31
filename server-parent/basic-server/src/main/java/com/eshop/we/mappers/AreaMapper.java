@@ -1,7 +1,8 @@
-package sharebooks.mapper;
+package com.eshop.we.mappers;
 
-import sharebooks.entity.Area;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+
+import com.eshop.we.mapper.SuperMapper;
+import com.eshop.we.user.entity.Area;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @author anonymity
  * @since 2018-07-04
  */
-public interface AreaMapper extends BaseMapper<Area> {
+public interface AreaMapper extends SuperMapper<Area> {
 
 }

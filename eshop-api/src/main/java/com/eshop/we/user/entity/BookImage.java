@@ -1,4 +1,4 @@
-package sharebooks.entity;
+package com.eshop.we.user.entity;
 
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.annotations.TableId;

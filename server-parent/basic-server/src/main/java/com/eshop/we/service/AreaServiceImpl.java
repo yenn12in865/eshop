@@ -1,10 +1,12 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.Area;
-import sharebooks.mapper.AreaMapper;
-import sharebooks.service.AreaService;
+
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.AreaMapper;
+import com.eshop.we.user.api.AreaService;
+import com.eshop.we.user.entity.Area;
+
 
 /**
  * <p>
@@ -14,7 +16,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class AreaServiceImpl extends ServiceImpl<AreaMapper, Area> implements AreaService {
 
 }

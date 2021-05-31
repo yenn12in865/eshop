@@ -1,10 +1,11 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.Book;
-import sharebooks.mapper.BookMapper;
-import sharebooks.service.BookService;
+
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.BookMapper;
+import com.eshop.we.user.api.BookService;
+import com.eshop.we.user.entity.Book;
 
 /**
  * <p>
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class BookServiceImpl extends ServiceImpl<BookMapper, Book> implements BookService {
 
 }

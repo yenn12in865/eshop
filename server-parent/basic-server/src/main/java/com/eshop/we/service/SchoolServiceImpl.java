@@ -1,10 +1,10 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.School;
-import sharebooks.mapper.SchoolMapper;
-import sharebooks.service.SchoolService;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.SchoolMapper;
+import com.eshop.we.user.api.SchoolService;
+import com.eshop.we.user.entity.School;
 
 /**
  * <p>
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class SchoolServiceImpl extends ServiceImpl<SchoolMapper, School> implements SchoolService {
 
 }

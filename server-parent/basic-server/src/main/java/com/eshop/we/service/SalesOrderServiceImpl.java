@@ -1,10 +1,10 @@
-package sharebooks.serviceImpl;
+package com.eshop.we.service;
 
-import sharebooks.entity.SalesOrder;
-import sharebooks.mapper.SalesOrderMapper;
-import sharebooks.service.SalesOrderService;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.eshop.we.mappers.SalesOrderMapper;
+import com.eshop.we.user.api.SalesOrderService;
+import com.eshop.we.user.entity.SalesOrder;
 
 /**
  * <p>
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @author anonymity
  * @since 2018-07-04
  */
-@Service
+@Service(version = "1.0.0")
 public class SalesOrderServiceImpl extends ServiceImpl<SalesOrderMapper, SalesOrder> implements SalesOrderService {
 
 }
